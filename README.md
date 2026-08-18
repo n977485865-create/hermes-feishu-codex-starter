@@ -32,6 +32,10 @@ d="$(mktemp -d)" && npx -y degit n977485865-create/hermes-feishu-codex-starter "
 
 上述命令会自动识别支持的执行 Agent，安装完成后删除临时下载目录。
 
+## 小红书 SkillHub 上传版
+
+仓库根目录包含跨 Agent 安装器；若上传到小红书 SkillHub，请只上传 [`skillhub/`](skillhub/) 目录。它是无可执行脚本的指导版，明确了凭证、外部动作与用户确认边界，适合平台审核与分发。
+
 ## 常规使用方式
 
 也可以克隆或下载整个仓库目录后执行安装脚本。
