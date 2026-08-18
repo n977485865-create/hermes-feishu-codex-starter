@@ -16,9 +16,25 @@ Hermes + 飞书始终是固定底座。Codex、Claude Code、WorkBuddy/CodeBuddy
 
 本仓库不包含也不要求提交 App Secret、OAuth token、API Key、`.env` 或 Gateway 日志。
 
-## 使用方式
+## 一条命令安装（推荐）
 
-将整个仓库目录复制到你的 Skill 目录，或使用安装脚本。
+已安装 Node.js / Codex CLI 的 macOS 或 Linux 用户可直接执行；不需要先安装 Git：
+
+```bash
+d="$(mktemp -d)" && npx -y degit n977485865-create/hermes-feishu-codex-starter "$d" && bash "$d/scripts/install-execution-agent-skill.sh" && rm -rf "$d"
+```
+
+只安装到 Codex：
+
+```bash
+d="$(mktemp -d)" && npx -y degit n977485865-create/hermes-feishu-codex-starter "$d" && bash "$d/scripts/install-execution-agent-skill.sh" --target codex && rm -rf "$d"
+```
+
+上述命令会自动识别支持的执行 Agent，安装完成后删除临时下载目录。
+
+## 常规使用方式
+
+也可以克隆或下载整个仓库目录后执行安装脚本。
 
 macOS / Linux：
 
