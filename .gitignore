@@ -1,0 +1,15 @@
+# 凭证与本地环境
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 日志与系统文件
+*.log
+.DS_Store
+
+# 构建与依赖
+node_modules/
+dist/
+build/
